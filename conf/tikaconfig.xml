@@ -24,8 +24,6 @@
   <parsers>
 
     <parser name="parse-dcxml" class="org.apache.tika.parser.xml.DcXMLParser">
-      <mime>text/xml</mime>
-      <mime>application/xml</mime>
       <mime>image/svg+xml</mime>
     </parser>
 
@@ -74,6 +72,8 @@
 
     <parser name="parse-txt" class="org.apache.tika.parser.txt.TXTParser">
       <mime>text/plain</mime>
+      <mime>text/xml</mime>
+      <mime>application/xml</mime>
     </parser>
 
     <parser name="parse-openoffice" class="org.apache.tika.parser.opendocument.OpenOfficeParser">
